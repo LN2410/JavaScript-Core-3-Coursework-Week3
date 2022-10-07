@@ -15,6 +15,8 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+The console log in line 5 is inside the function therefore line 4 is then logged
+The console log in line will output x as 1 as it is outside the function
 
 ## Question 2
 
@@ -34,6 +36,8 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+- It will print 10 in the console as it is a global variable and a referenceError y is not defined as it only lives in that function.
 
 ## Question 3
 
