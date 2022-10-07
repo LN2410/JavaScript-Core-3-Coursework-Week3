@@ -6,3 +6,16 @@ let order = [
   { itemName: "Hot Coffee", quantity: 2, unitPrice: 1.0 },
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
+
+function orderReciept(order) {
+  let total = 0;
+  console.log(`QTY ITEM TOTAL`);
+  order.forEach((el) => {
+    const { itemName, quantity, unitPrice } = el;
+    console.log(`${quantity} ${itemName} ${unitPrice}`);
+    total = total + unitPrice;
+  });
+  console.log(`Total: ${total}`);
+}
+
+orderReciept(order);
